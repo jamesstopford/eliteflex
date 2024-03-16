@@ -1,0 +1,50 @@
+﻿@page "/tasks"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject TaskApiClient TaskApi
+
+<PageTitle>Tasks</PageTitle>
+
+<h1>Tasks</h1>
+
+<p>This component demonstrates showing data loaded from a backend task API service.</p>
+
+@if (_tasks == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var forecast in _tasks)
+        {
+            <tr>
+                <td>@forecast.Title</td>
+                <td>@forecast.id</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private FlexTask[]? _tasks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _tasks = await TaskApi.GetTasksAsync();
+    }
+
+}

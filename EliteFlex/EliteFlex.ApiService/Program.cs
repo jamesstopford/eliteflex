@@ -16,6 +16,11 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
+var taskTitles = new[]
+{
+    "Walk Dog", "Pet Cat", "Clean Room", "Lift", "Cardio", "Stretch", "Github commit", "Call mom", "Dance party", "Helldivers 2"
+};
+
 app.MapGet("/weatherforecast", () =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
@@ -29,6 +34,19 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 });
 
+app.MapGet("/task", () =>
+{
+    var forecast = Enumerable.Range(1, 5).Select(index =>
+            new FlexTask
+            (
+                taskTitles[Random.Shared.Next(taskTitles.Length)],
+                Random.Shared.Next(-20, 55)
+            ))
+        .ToArray();
+    return forecast;
+});
+
+
 app.MapDefaultEndpoints();
 
 app.Run();
@@ -36,4 +54,9 @@ app.Run();
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+}
+
+record FlexTask(string Title, int id)
+{
+   
 }
