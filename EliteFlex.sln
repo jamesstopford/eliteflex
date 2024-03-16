@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliteFlex.AppHost", "EliteFlex\EliteFlex.AppHost\EliteFlex.AppHost.csproj", "{93D66DC1-AF1D-4A5B-A258-4DF2919FB373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliteFlex.ServiceDefaults", "EliteFlex\EliteFlex.ServiceDefaults\EliteFlex.ServiceDefaults.csproj", "{48704041-5BC0-43B1-9361-E2F366D44616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliteFlex.ApiService", "EliteFlex\EliteFlex.ApiService\EliteFlex.ApiService.csproj", "{97E73539-D9D9-41F1-B817-FFA73170C75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliteFlex.Web", "EliteFlex\EliteFlex.Web\EliteFlex.Web.csproj", "{88F92C6F-C3F1-4414-AE9E-BE6B02FF3D58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93D66DC1-AF1D-4A5B-A258-4DF2919FB373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D66DC1-AF1D-4A5B-A258-4DF2919FB373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D66DC1-AF1D-4A5B-A258-4DF2919FB373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D66DC1-AF1D-4A5B-A258-4DF2919FB373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48704041-5BC0-43B1-9361-E2F366D44616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48704041-5BC0-43B1-9361-E2F366D44616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48704041-5BC0-43B1-9361-E2F366D44616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48704041-5BC0-43B1-9361-E2F366D44616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E73539-D9D9-41F1-B817-FFA73170C75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E73539-D9D9-41F1-B817-FFA73170C75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E73539-D9D9-41F1-B817-FFA73170C75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E73539-D9D9-41F1-B817-FFA73170C75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F92C6F-C3F1-4414-AE9E-BE6B02FF3D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F92C6F-C3F1-4414-AE9E-BE6B02FF3D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F92C6F-C3F1-4414-AE9E-BE6B02FF3D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F92C6F-C3F1-4414-AE9E-BE6B02FF3D58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
